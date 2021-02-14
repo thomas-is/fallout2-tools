@@ -4,7 +4,7 @@
 
 These python scripts are ugly, they contains many hacks and workaraounds.
 
-Thes scripts **may corrupt** your saves.
+These scripts **may corrupt** your saves.
 
 **USE AT YOUR OWN RISK**
 
@@ -12,7 +12,7 @@ Thes scripts **may corrupt** your saves.
 
 Symlink `MASTER.DAT` here
 ```
-ln -s /paht/to/your/fallout2/MASTER/DAT .
+ln -s /paht/to/your/fallout2/MASTER/DAT MASTER.DAT
 ```
 
 To edit inventory you **must** extract `objects.lst` from `MASTER.DAT`.
