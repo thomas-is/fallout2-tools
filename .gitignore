@@ -1,0 +1,4 @@
+MASTER.DAT
+src/*.o
+bin/*
+!.keepme

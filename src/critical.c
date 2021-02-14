@@ -29,7 +29,7 @@ int main( int argc, char *argv[] ) {
 		fprintf(stdout,_FAIL_);
 		fprintf(stdout,"%s is not a Fallout 2 savegame.\n",argv[1]);
 		return 1;
-	} 
+	}
 
 	/* open save.dat */
 	size = loadfromfile(&save,argv[1]);
@@ -47,10 +47,10 @@ int main( int argc, char *argv[] ) {
 	}
 
 	/* Show name */
-	fprintf(stdout,"Name    : %s\n",savezone.start+0x1d);	
+	fprintf(stdout,"Name    : %s\n",savezone.start+0x1d);
 
 	/* Bonus critical chance */
-	/* Each level (3 max) of "More Criticals" gives a +5% here */
+	/* Each level (max 3) of "More Criticals" gives a +5% here */
 	save = savezone.stats+0xd0;
 	if ( bonuscriticalchance != -1) write_BE_int( bonuscriticalchance, save );
 	n = read_BE_int(save);
